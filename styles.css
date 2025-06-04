@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+body {
+    background-color: #F4F0EA;
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.input-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(35, 9, 230);
+    margin-bottom: 2rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+}
+
+input.nome,
+input.senha {
+    border-radius: 8px;
+    height: 40px;
+    padding: 0 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input.nome:focus,
+input.senha:focus {
+    border-color: rgb(35, 9, 230);
+    outline: none;
+}
+
+.enviar {
+    height: 45px;
+    background-color: rgb(35, 9, 230);
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 0.5rem;
+}
+
+.enviar:hover {
+    background-color: rgb(25, 5, 180);
+    transform: scale(1.02);
+}
+
+.lembrar-label {
+    color: rgb(35, 9, 230);
+    font-size: 1rem;
+    margin: 0.5rem 0 1.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
