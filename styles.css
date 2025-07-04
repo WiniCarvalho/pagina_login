@@ -27,9 +27,8 @@ body {
 h1 {
     text-align: center;
     color: rgb(35, 9, 230);
-    margin-bottom: 2rem;
-    margin-right: 5rem;
     margin-bottom: 5rem;
+    margin-right: 5rem;
 }
 
 input.nome,
