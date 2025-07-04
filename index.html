@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Login</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <main class="input-container">
     <h1 class="titulo">Faça seu login</h1>
-    <div class="input-container">
+    <form>
+      <input 
+        class="nome" 
+        type="email"
+        name="nome" 
+        size="25" 
+        placeholder="E-mail" 
+        required
+      />
+      
+      <input 
+        class="senha"
+        type="password"
+        name="senha"
+        size="25"
+        placeholder="Senha"
+        required
+      />
+      
+      <label class="lembrar-label">
         <input 
-    class="nome" 
-    type="email"
-    name="nome" 
-    size="25" 
-    placeholder="E-mail" 
-/>
-<br>
-    <input 
-    class="senha"
-    type="password"
-    name="senha"
-    size="25"
-    placeholder="Senha"
->
-<label class="lembrar-label">
-    <input 
-    class="lembrar-checkbox"
-    type="checkbox"
-    name="lembrar"
-    
->
-Lembrar-me
-</label>
-<br>
-    <button class="enviar">Entrar</button>
+          class="lembrar-checkbox"
+          type="checkbox"
+          name="lembrar"
+        />
+        Lembrar-me
+      </label>
+      
+      <button type="submit" class="enviar">Entrar</button>
 
-    <h3>Esqueceu sua senha? <a href="#" style="color: rgb(35, 9, 230);">Clique aqui!</a></h3>
-
-    </div>
+      <h3>Esqueceu sua senha? <a href="#" style="color: rgb(35, 9, 230);">Clique aqui!</a></h3>
+    </form>
+  </main>
 </body>
 </html>
-
-
-
