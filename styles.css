@@ -1,81 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap');
 
 body {
-  background-color: #f5f5f7;
+  background-color: #f0f4f9;
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  color: #333333;
+  color: #1a1a1a;
 }
 
 .input-container {
   background-color: #ffffff;
-  padding: 2rem 2.5rem;
+  padding: 2.5rem 2rem;
   border-radius: 12px;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(26, 54, 126, 0.15);
   width: 100%;
-  max-width: 360px;
+  max-width: 400px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
 }
 
 h1.titulo {
-  font-weight: 600;
-  font-size: 1.9rem;
+  font-weight: 700;
+  font-size: 2.4rem;
   text-align: center;
-  margin-bottom: 2.5rem;
-  color: #222222;
+  margin-bottom: 3rem;
+  color: #1a2a6c; /* Azul forte */
+  letter-spacing: 0.05em;
 }
 
 input.nome,
 input.senha {
-  border: 1.5px solid #cccccc;
+  border: 1.8px solid #a3bffa;
   border-radius: 8px;
   height: 44px;
   padding: 0 14px;
   font-size: 1rem;
   margin-bottom: 1.25rem;
-  background-color: #fafafa;
-  color: #444444;
-  transition: border-color 0.25s ease;
+  background-color: #f9fbff;
+  color: #1a1a1a;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 input.nome::placeholder,
 input.senha::placeholder {
-  color: #999999;
+  color: #a3bffa;
 }
 
 input.nome:focus,
 input.senha:focus {
-  border-color: #777777;
+  border-color: #2a47b1;
+  box-shadow: 0 0 8px rgba(42, 71, 177, 0.4);
   outline: none;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .enviar {
   height: 46px;
-  background-color: #444444;
-  color: #f9f9f9;
+  background-color: #2a47b1;
+  color: #ffffff;
   border: none;
-  border-radius: 8px;
-  font-size: 1.1rem;
-  font-weight: 600;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  font-weight: 700;
   cursor: pointer;
-  transition: background-color 0.25s ease, transform 0.15s ease;
+  transition: background-color 0.3s ease, transform 0.15s ease;
   margin-top: 1rem;
-  box-shadow: none;
+  align-self: center; /* centraliza o botão */
+  padding: 0 60px;
+  box-shadow: 0 6px 12px rgba(42, 71, 177, 0.3);
 }
 
 .enviar:hover,
 .enviar:focus {
-  background-color: #222222;
-  transform: scale(1.03);
+  background-color: #1a2a6c;
+  transform: scale(1.05);
   outline: none;
+  box-shadow: 0 8px 16px rgba(26, 42, 108, 0.5);
 }
 
 .lembrar-label {
@@ -83,7 +88,7 @@ input.senha:focus {
   align-items: center;
   gap: 0.5rem;
   font-size: 1rem;
-  color: #555555;
+  color: #2a47b1;
   margin: 0.5rem 0 1.5rem 0;
   user-select: none;
 }
@@ -92,46 +97,46 @@ input.senha:focus {
   width: 18px;
   height: 18px;
   cursor: pointer;
-  accent-color: #444444;
+  accent-color: #2a47b1;
   border-radius: 4px;
-  transition: box-shadow 0.25s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .lembrar-checkbox:focus {
   outline: none;
-  box-shadow: 0 0 6px rgba(68, 68, 68, 0.3);
+  box-shadow: 0 0 6px rgba(42, 71, 177, 0.4);
 }
 
 h3 {
   font-weight: 400;
   font-size: 0.9rem;
   text-align: center;
-  color: #555555;
+  color: #2a47b1;
   margin-top: 0;
 }
 
 h3 a {
-  color: #444444;
+  color: #2a47b1;
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.25s ease;
+  transition: color 0.3s ease;
 }
 
 h3 a:hover,
 h3 a:focus {
-  color: #222222;
+  color: #1a2a6c;
   text-decoration: underline;
   outline: none;
 }
 
 @media (max-width: 420px) {
   .input-container {
-    padding: 1.5rem 1.5rem;
+    padding: 2rem 1.5rem;
     max-width: 90%;
   }
 
   h1.titulo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
   }
 
@@ -144,5 +149,7 @@ h3 a:focus {
   .enviar {
     height: 40px;
     font-size: 1rem;
+    padding: 0 50px;
   }
 }
+
