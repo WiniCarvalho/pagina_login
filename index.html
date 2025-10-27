@@ -44,38 +44,9 @@
     </form>
   </main>
   
-  <script>
-document.querySelector("form").addEventListener("submit", function(e) {
-  e.preventDefault();
-  
-  const email = document.querySelector(".nome").value.trim();
-  const senha = document.querySelector(".senha").value.trim();
-  const lembrar = document.querySelector(".lembrar-checkbox").checked;
 
-  if (email === "" || senha === "") {
-    alert("Por favor, preencha todos os campos.");
-    return;
-  }
-
-  if (!email.includes("@") || !email.includes(".")) {
-    alert("Insira um e-mail válido.");
-    return;
-  }
-
-  if (senha.length < 6) {
-    alert("A senha deve ter pelo menos 6 caracteres.");
-    return;
-  }
-
-  alert(`Bem-vindo, ${email.split("@")[0]}!${lembrar ? " (Sessão será lembrada)" : ""}`);
-
-  // Simulação de redirecionamento pós-login
-  setTimeout(() => {
-    window.location.href = "dashboard.html"; 
-  }, 1000);
-});
-</script>
 
 </body>
 </html>
+
 
